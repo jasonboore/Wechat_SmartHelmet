@@ -1,0 +1,4 @@
+<!--components/curInfo/curInfo.wxml-->
+<view class="curInfo">
+  <text>{{curTitle}} ：{{curVal}}</text>
+</view>

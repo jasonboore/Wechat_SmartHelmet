@@ -1,0 +1,20 @@
+.itemBox{
+  display: inline-block;
+  width: 310rpx;
+  margin-right: 15rpx;
+  text-align: center;
+}
+.itemBox .pic image{
+  width: 100%;
+  display: block;
+}
+.itemBox .title{
+  font-size: 30rpx;
+  color: #333;
+  padding-bottom: 15rpx 0 5rpx;
+}
+.itemBox .time{
+  font-size: 15rpx;
+}
+
+

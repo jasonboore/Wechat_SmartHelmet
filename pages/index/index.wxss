@@ -1,0 +1,49 @@
+.title{
+  height: 90rpx;
+  background: #00BFFF;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  padding: 0 30rpx;
+  font-size: 50rpx;
+  color: #333;
+}
+.title .name{
+  margin: auto auto;
+}
+@keyframes wxChat{
+  0%,50%,100%{opacity: 1}
+  25%{opacity: 0}
+}
+.title .location{
+  height: 60rpx;
+  width: 60rpx;
+  background: none;
+  margin: auto 0;
+  padding: 0;
+}
+.title image{
+  height: 60rpx;
+  width: 60rpx;
+  animation: wxChat 2s infinite alternate;
+}
+
+.curInfo{
+  background: #00BFFF;
+  margin: 40rpx 0 40rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.curInfo curInfo{
+  width: 50%;
+}
+.historyModule{ 
+  padding:0 30rpx;
+  margin-top:60rpx;
+  
+}
+.historyModule .more{
+  color: #31c27c;
+}
+.historyModule .outViewMain{
+  white-space: nowrap;
+}

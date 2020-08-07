@@ -1,0 +1,9 @@
+<view class="itemBox" style="width:{{itemWth}}rpx;margin-right:{{itemMgn}}rpx">
+<view class="time">{{time}}</view>
+      <view class="pic">
+        <image wx:if="{{data <= 0}}" src="{{lowLight}}" mode="widthFix"></image>
+        <image wx:else src="{{highLight}}" mode="widthFix"></image>
+      </view>
+      <view class="title" style="font-size:{{itemFontSize}}rpx">{{data}} Lux</view>
+     
+</view>

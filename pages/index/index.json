@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "curInfo": "/components/curInfo/curInfo",
+    "pubTitle":"/components/pubTitle/pubTitle",
+    "hisTemp":"/components/hisTemp/hisTemp",
+    "hisLight":"/components/hisLight/hisLight",
+    "hisWarn":"/components/hisWarn/hisWarn"
+  }
+}

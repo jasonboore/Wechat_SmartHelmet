@@ -1,0 +1,5 @@
+<!--components/pubTitle/pubTitle.wxml-->
+  <view class="pubTitle">
+    <view class="txt">{{title}}</view>
+    <navigator  open-type="reLaunch" class="more" url="{{moreUrl}}">更多 ></navigator>
+  </view>

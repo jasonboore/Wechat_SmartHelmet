@@ -1,0 +1,10 @@
+<view class="itemBox" style="width:{{itemWth}}rpx;margin-right:{{itemMgn}}rpx">
+<view class="time">{{time}}</view>
+      <view class="pic">
+        <image wx:if="{{data == 0}}" src="{{lowWarn}}" mode="widthFix"></image>
+        <image wx:else src="{{highWarn}}" mode="widthFix"></image>
+      </view>
+     <view wx:if="{{data == 0}}" class="title" style="font-size:{{itemFontSize}}rpx">无危险</view>
+      <view wx:else class="title" style="font-size:{{itemFontSize}}rpx;color:rgba(255,0,0)">危险</view>
+     
+</view>

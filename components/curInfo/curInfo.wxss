@@ -1,0 +1,8 @@
+.curInfo{
+  margin-bottom: 20rpx;
+}
+
+.curInfo text{
+  font-size: 46rpx;
+  color: #333;
+}

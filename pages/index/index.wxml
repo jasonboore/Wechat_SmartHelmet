@@ -1,0 +1,47 @@
+<view class="curStatus">
+  <view class="title">
+    <view class="name">{{time}}</view>
+    <button class="location">
+      <image src="/images/pointer.png"></image>
+    </button>
+  </view>
+
+  <view class="curInfo">
+    <curInfo curTitle="海拔" curVal="{{altitude}}m"></curInfo>
+    <curInfo curTitle="气温" curVal="{{temperature}}℃"></curInfo>
+    <curInfo curTitle="状态" curVal="{{warning}}"></curInfo>
+    <curInfo curTitle="光照" curVal="{{light}}"></curInfo>
+  </view>
+
+  <view class="history">
+    <view class="historyModule">
+        <pubTitle title="历史温度"></pubTitle>
+        <scroll-view  class="outViewMain" scroll-x>
+          <block wx:for="{{tempArr}}" wx:key="index">
+            <hisTemp lowTemp="/images/lowtemp.png" highTemp="/images/hightemp.png" data="{{item.temperature}}" time="{{item.time}}"></hisTemp>
+          </block>
+        </scroll-view>
+    </view>
+      
+
+    <view class="historyModule">
+        <pubTitle title="历史光照"></pubTitle>
+        <scroll-view  class="outViewMain" scroll-x>
+          <block wx:for="{{lightArr}}" wx:key="index">
+            <hisLight lowLight="/images/lowlight.png" highLight="/images/highlight.png" data="{{item.light}}" time="{{item.time}}"></hisLight>
+          </block>
+        </scroll-view>
+    </view>
+
+    <view class="historyModule">
+      <pubTitle title="历史状态"></pubTitle>
+        <scroll-view  class="outViewMain" scroll-x>
+          <block wx:for="{{warnArr}}" wx:key="index">
+            <hisWarn lowWarn="/images/safe.png" highWarn="/images/unsafe.png" data="{{item.warning}}"></hisWarn>
+          </block>
+        </scroll-view>
+    </view>
+
+  </view>
+
+</view>
